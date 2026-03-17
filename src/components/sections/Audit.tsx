@@ -20,7 +20,7 @@ const Audit = () => (
       <motion.ul variants={fadeUp} className="mt-10 flex flex-col gap-2.5 text-left">
         {assessments.map((a, i) => (
           <li key={i} className="flex items-start gap-3 text-sm text-foreground">
-            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground" />{a}
+            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-red" />{a}
           </li>
         ))}
       </motion.ul>

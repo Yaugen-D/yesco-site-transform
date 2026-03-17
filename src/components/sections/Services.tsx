@@ -28,7 +28,7 @@ const Services = () => (
         <motion.div key={pkg.name} variants={fadeUp} className="flex flex-col rounded-2xl bg-card p-8 shadow-[0_1px_3px_0_hsl(var(--foreground)/0.04),0_8px_24px_-4px_hsl(var(--foreground)/0.06)] transition-transform duration-300 hover:-translate-y-1">
           <div className="flex items-center justify-between">
             <h3 className="text-2xl font-bold text-foreground">{pkg.name}</h3>
-            <span className="font-mono-label text-muted-foreground">{pkg.type}</span>
+            <span className="font-mono-label text-brand-red">{pkg.type}</span>
           </div>
           <p className="mt-1 text-muted-foreground">{pkg.desc}</p>
           <ul className="mt-8 flex flex-1 flex-col gap-2.5">

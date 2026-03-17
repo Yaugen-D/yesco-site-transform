@@ -1,9 +1,5 @@
 import { motion } from "framer-motion";
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 24 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } },
-};
+import { fadeUp } from "@/lib/animations";
 
 const issues = [
   "No real monitoring — just hope",
@@ -16,58 +12,25 @@ const issues = [
 const Problem = () => (
   <section className="px-6 py-32 md:px-12 lg:px-20">
     <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
-      {/* Left — sticky header */}
       <div className="lg:sticky lg:top-32 lg:self-start">
-        <motion.p
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="font-mono-label text-muted-foreground"
-        >
+        <motion.p variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="font-mono-label text-muted-foreground">
           The Problem
         </motion.p>
-        <motion.h2
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="mt-4 text-4xl font-bold tracking-tight text-foreground md:text-5xl"
-        >
-          Downtime Is
-          <br />
-          Expensive
+        <motion.h2 variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="mt-4 text-4xl font-bold tracking-tight text-foreground md:text-5xl">
+          Downtime Is<br />Expensive
         </motion.h2>
       </div>
-
-      {/* Right — content */}
       <div className="flex flex-col gap-12">
-        <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="flex flex-col gap-4"
-        >
+        <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="flex flex-col gap-4">
           <p className="text-3xl font-bold text-foreground md:text-4xl">
             $5k–$50k<span className="text-muted-foreground">/min</span>
           </p>
           <p className="max-w-[48ch] text-muted-foreground">
-            That's what revenue-critical platforms lose during unplanned downtime. Add broken marketing
-            campaigns, lost user trust, and reputational damage — the real cost is even higher.
+            That's what revenue-critical platforms lose during unplanned downtime. Add broken marketing campaigns, lost user trust, and reputational damage — the real cost is even higher.
           </p>
         </motion.div>
-
-        <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="flex flex-col gap-6"
-        >
-          <p className="font-mono-label text-muted-foreground">
-            Yet many platforms run with...
-          </p>
+        <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="flex flex-col gap-6">
+          <p className="font-mono-label text-muted-foreground">Yet many platforms run with...</p>
           <ul className="flex flex-col gap-3">
             {issues.map((item, i) => (
               <li key={i} className="flex items-start gap-3 text-foreground">

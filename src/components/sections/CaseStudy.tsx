@@ -1,9 +1,5 @@
 import { motion } from "framer-motion";
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 24 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } },
-};
+import { stagger, fadeUp } from "@/lib/animations";
 
 const metrics = [
   { label: "Uptime", before: "97.9%", after: "99.6%" },
@@ -13,33 +9,12 @@ const metrics = [
 
 const CaseStudy = () => (
   <section className="px-6 py-32 md:px-12 lg:px-20">
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.12 } } }}
-      className="mx-auto max-w-4xl"
-    >
-      <motion.p variants={fadeUp} className="font-mono-label text-muted-foreground">
-        Case Study
-      </motion.p>
+    <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="mx-auto max-w-4xl">
+      <motion.p variants={fadeUp} className="font-mono-label text-muted-foreground">Case Study</motion.p>
+      <motion.h2 variants={fadeUp} className="mt-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">Adult Streaming Platform</motion.h2>
+      <motion.p variants={fadeUp} className="mt-2 text-lg text-muted-foreground">2M+ monthly active users</motion.p>
 
-      <motion.h2
-        variants={fadeUp}
-        className="mt-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl"
-      >
-        Adult Streaming Platform
-      </motion.h2>
-
-      <motion.p variants={fadeUp} className="mt-2 text-lg text-muted-foreground">
-        2M+ monthly active users
-      </motion.p>
-
-      {/* Metrics */}
-      <motion.div
-        variants={fadeUp}
-        className="mt-16 grid gap-px overflow-hidden rounded-2xl bg-border sm:grid-cols-3"
-      >
+      <motion.div variants={fadeUp} className="mt-16 grid gap-px overflow-hidden rounded-2xl bg-border sm:grid-cols-3">
         {metrics.map((m) => (
           <div key={m.label} className="flex flex-col gap-1 bg-background p-8">
             <span className="font-mono-label text-muted-foreground">{m.label}</span>
@@ -51,14 +26,8 @@ const CaseStudy = () => (
         ))}
       </motion.div>
 
-      {/* Highlight stat */}
-      <motion.div
-        variants={fadeUp}
-        className="mt-12 rounded-2xl bg-foreground px-8 py-10 text-center"
-      >
-        <p className="text-4xl font-extrabold tracking-tight text-background md:text-5xl">
-          $250k+
-        </p>
+      <motion.div variants={fadeUp} className="mt-12 rounded-2xl bg-foreground px-8 py-10 text-center">
+        <p className="text-4xl font-extrabold tracking-tight text-background md:text-5xl">$250k+</p>
         <p className="mt-2 text-sm text-background/60">annual revenue protected</p>
       </motion.div>
     </motion.div>

@@ -1,9 +1,11 @@
+import Logo from "@/components/Logo";
+
 const Footer = () => (
   <footer className="border-t border-border px-6 py-12 md:px-12 lg:px-20">
     <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
       <div>
-        <p className="text-lg font-bold tracking-tight text-foreground">yescolab</p>
-        <p className="mt-1 text-sm text-muted-foreground">
+        <Logo />
+        <p className="mt-2 text-sm text-muted-foreground">
           SRE & Infrastructure Services
         </p>
       </div>

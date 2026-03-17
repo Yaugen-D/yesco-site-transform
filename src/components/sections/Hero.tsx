@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { stagger, fadeUp } from "@/lib/animations";
+import Logo from "@/components/Logo";
 
 const industries = ["Entertainment", "Betting & Gaming", "Streaming", "Marketplaces"];
 
 const Hero = () => (
   <section className="relative flex min-h-screen flex-col justify-between px-6 pb-16 pt-8 md:px-12 lg:px-20">
     <nav className="flex items-center justify-between">
-      <span className="text-lg font-bold tracking-tight text-foreground">yescolab</span>
+      <Logo />
       <a href="#contact" className="font-mono-label text-muted-foreground transition-colors hover:text-foreground">
         Contact
       </a>

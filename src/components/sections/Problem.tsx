@@ -23,7 +23,7 @@ const Problem = () => (
       <div className="flex flex-col gap-12">
         <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="flex flex-col gap-4">
           <p className="text-3xl font-bold text-foreground md:text-4xl">
-            $5k–$50k<span className="text-muted-foreground">/min</span>
+            $5k–$50k<span className="text-brand-red">/min</span>
           </p>
           <p className="max-w-[48ch] text-muted-foreground">
             That's what revenue-critical platforms lose during unplanned downtime. Add broken marketing campaigns, lost user trust, and reputational damage — the real cost is even higher.
@@ -34,7 +34,7 @@ const Problem = () => (
           <ul className="flex flex-col gap-3">
             {issues.map((item, i) => (
               <li key={i} className="flex items-start gap-3 text-foreground">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-muted-foreground" />
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-red" />
                 {item}
               </li>
             ))}

@@ -4,8 +4,8 @@ import Logo from "@/components/Logo";
 
 const industries = ["Entertainment", "Betting & Gaming", "Streaming", "Marketplaces"];
 
-const Hero = () => (
-  <section className="relative flex min-h-screen flex-col justify-between px-6 pb-16 pt-8 md:px-12 lg:px-20">
+const Hero = () =>
+<section className="relative flex min-h-screen flex-col justify-between px-6 pb-16 pt-8 md:px-12 lg:px-20">
     <nav className="flex items-center justify-between">
       <Logo />
       <div className="flex items-center gap-6">
@@ -27,19 +27,19 @@ const Hero = () => (
         <br />
         <span className="text-muted-foreground">&amp; Growth</span>
       </motion.h1>
-      <motion.p variants={fadeUp} className="max-w-[48ch] text-lg text-muted-foreground md:text-xl">
+      <motion.p variants={fadeUp} className="max-w-[48ch] text-lg md:text-xl font-semibold text-destructive">
         Uptime is revenue. We protect both.
       </motion.p>
     </motion.div>
 
     <motion.div variants={stagger} initial="hidden" animate="visible" className="mt-20 flex flex-wrap gap-3">
-      {industries.map((ind) => (
-        <motion.span key={ind} variants={fadeUp} className="rounded-full border border-border px-4 py-1.5 font-mono-label text-muted-foreground">
+      {industries.map((ind) =>
+    <motion.span key={ind} variants={fadeUp} className="rounded-full border border-border px-4 py-1.5 font-mono-label text-muted-foreground">
           {ind}
         </motion.span>
-      ))}
+    )}
     </motion.div>
-  </section>
-);
+  </section>;
+
 
 export default Hero;

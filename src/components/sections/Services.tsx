@@ -5,17 +5,17 @@ const packages = [
   {
     name: "Rescue", type: "One-time", desc: "Fix instability fast",
     deliverables: ["Emergency incident response", "Root cause analysis", "Critical hotfixes deployed", "Monitoring setup for visibility", "Post-mortem report with action plan"],
-    result: "Platform stabilized within days, not months.",
+    result: "Reduce incidents by 50-80% within weeks",
   },
   {
     name: "Stabilize", type: "Ongoing", desc: "Predictable operations",
     deliverables: ["24/7 monitoring & alerting", "Incident management & response", "Infrastructure optimization", "Capacity planning", "Monthly reliability reports"],
-    result: "Consistent uptime with zero surprises.",
+    result: "Controlled operational risk. Reliable 99.5%+ uptime",
   },
   {
     name: "Scale", type: "Project-based", desc: "Architecture for growth",
-    deliverables: ["Architecture review & redesign", "Auto-scaling implementation", "CI/CD pipeline optimization", "Load testing & performance tuning", "Migration & zero-downtime deployments"],
-    result: "Infrastructure that grows with your revenue.",
+    deliverables: ["Architecture review & redesign", "Bottleneck elimination", "CI/CD pipeline optimization", "Load testing & performance tuning", "Migration & zero-downtime deployments"],
+    result: "Platform ready for 3-10x traffic growth",
   },
 ];
 

@@ -28,7 +28,7 @@ const Hero = () => (
         <span className="text-muted-foreground">&amp; Growth</span>
       </motion.h1>
       <motion.p variants={fadeUp} className="max-w-[48ch] text-lg text-muted-foreground md:text-xl">
-        Uptime is revenue. We protect both.
+        Uptime is revenue. <span className="text-brand-red font-semibold">We protect both.</span>
       </motion.p>
     </motion.div>
 

@@ -11,9 +11,9 @@ const Index = () => (
     <Hero />
     <Problem />
     <Services />
+    <CaseStudy />
     <PainPoints />
     <Audit />
-    <CaseStudy />
     <Footer />
   </main>
 );

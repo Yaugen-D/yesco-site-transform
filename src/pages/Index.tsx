@@ -10,10 +10,10 @@ const Index = () => (
   <main className="overflow-x-hidden">
     <Hero />
     <Problem />
-    <PainPoints />
-    <CaseStudy />
     <Services />
+    <PainPoints />
     <Audit />
+    <CaseStudy />
     <Footer />
   </main>
 );

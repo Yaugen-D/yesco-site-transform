@@ -8,9 +8,14 @@ const Hero = () => (
   <section className="relative flex min-h-screen flex-col justify-between px-6 pb-16 pt-8 md:px-12 lg:px-20">
     <nav className="flex items-center justify-between">
       <Logo />
-      <a href="#contact" className="font-mono-label text-muted-foreground transition-colors hover:text-foreground">
-        Contact
-      </a>
+      <div className="flex items-center gap-6">
+        <a href="#services" className="font-mono-label text-muted-foreground transition-colors hover:text-foreground">
+          Services
+        </a>
+        <a href="#contact" className="font-mono-label text-muted-foreground transition-colors hover:text-foreground">
+          Contact
+        </a>
+      </div>
     </nav>
 
     <motion.div variants={stagger} initial="hidden" animate="visible" className="mt-auto flex max-w-5xl flex-col gap-8 pt-32">

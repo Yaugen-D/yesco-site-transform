@@ -26,7 +26,7 @@ const CaseStudy = () =>
       )}
       </motion.div>
 
-      <motion.div variants={fadeUp} className="mt-12 rounded-2xl bg-foreground px-8 py-10 text-center">
+      <motion.div variants={fadeUp} className="mt-12 rounded-2xl border-2 border-brand-red bg-foreground px-8 py-10 text-center shadow-[0_0_40px_-8px_hsl(var(--brand-red)/0.4)]">
         <p className="text-4xl font-extrabold tracking-tight text-background md:text-5xl">$250k+</p>
         <p className="mt-2 text-sm text-background/60">estimated annual revenue protected</p>
       </motion.div>

@@ -20,7 +20,7 @@ const CaseStudy = () =>
             <span className="font-mono-label text-muted-foreground">{m.label}</span>
             <div className="mt-3 flex items-baseline gap-3">
               <span className="text-sm text-muted-foreground line-through">{m.before}</span>
-              <span className="text-3xl font-bold text-muted-foreground">{m.after}</span>
+              <span className="text-3xl font-bold text-brand-red">{m.after}</span>
             </div>
           </div>
       )}

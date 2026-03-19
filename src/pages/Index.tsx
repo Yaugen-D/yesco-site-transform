@@ -7,7 +7,7 @@ import Audit from "@/components/sections/Audit";
 import Footer from "@/components/sections/Footer";
 
 const Index = () => (
-  <main className="overflow-x-hidden">
+  <main className="mx-auto max-w-7xl overflow-x-hidden">
     <Hero />
     <Problem />
     <Services />

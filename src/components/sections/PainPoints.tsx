@@ -17,7 +17,7 @@ const PainPoints = () => (
     <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} className="mt-16 grid gap-6 sm:grid-cols-2">
       {cards.map((card) => (
         <motion.div key={card.num} variants={fadeUp} className="group rounded-2xl bg-card p-8 shadow-[0_1px_3px_0_hsl(var(--foreground)/0.04),0_8px_24px_-4px_hsl(var(--foreground)/0.06)] transition-transform duration-300 hover:-translate-y-1">
-          <span className="font-mono-label text-brand-red">{card.num}</span>
+          <span className="text-lg font-bold text-brand-red">{card.num}</span>
           <h3 className="mt-4 text-xl font-bold text-foreground">{card.title}</h3>
           <ul className="mt-5 flex flex-col gap-2.5">
             {card.points.map((p, i) => (

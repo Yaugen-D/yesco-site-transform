@@ -20,7 +20,7 @@ const packages = [
 ];
 
 const Services = () => (
-  <section id="services" className="px-6 py-32 md:px-12 lg:px-20">
+  <section id="services" className="px-6 py-16 md:px-12 md:py-24 lg:px-20">
     <motion.p variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="font-mono-label text-muted-foreground">Services</motion.p>
     <motion.h2 variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="mt-4 text-4xl font-bold tracking-tight text-foreground md:text-5xl">How We Help</motion.h2>
     <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} className="mt-16 grid gap-6 lg:grid-cols-3">

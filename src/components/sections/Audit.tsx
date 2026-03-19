@@ -10,7 +10,7 @@ const assessments = [
 
 
 const Audit = () =>
-<section id="contact" className="px-6 py-32 md:px-12 lg:px-20">
+<section id="contact" className="px-6 py-16 md:px-12 md:py-24 lg:px-20">
     <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="mx-auto max-w-3xl text-center">
       <motion.p variants={fadeUp} className="font-mono-label text-muted-foreground">Get Started</motion.p>
       <motion.h2 variants={fadeUp} className="mt-4 text-4xl font-bold tracking-tight text-foreground md:text-5xl">Free Stability Audit</motion.h2>

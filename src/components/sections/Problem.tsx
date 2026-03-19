@@ -10,7 +10,7 @@ const issues = [
 
 
 const Problem = () =>
-<section className="px-6 py-32 md:px-12 lg:px-20">
+<section className="px-6 py-16 md:px-12 md:py-24 lg:px-20">
     <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
       <div className="lg:sticky lg:top-32 lg:self-start">
         <motion.p variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="font-mono-label text-muted-foreground">

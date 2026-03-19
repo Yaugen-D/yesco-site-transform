@@ -8,7 +8,7 @@ const metrics = [
 
 
 const CaseStudy = () =>
-<section className="px-6 py-32 md:px-12 lg:px-20">
+<section className="px-6 py-16 md:px-12 md:py-24 lg:px-20">
     <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="mx-auto max-w-4xl">
       <motion.p variants={fadeUp} className="font-mono-label text-muted-foreground">Case Study</motion.p>
       <motion.h2 variants={fadeUp} className="mt-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">Streaming Platform</motion.h2>
@@ -20,7 +20,7 @@ const CaseStudy = () =>
             <span className="font-mono-label text-muted-foreground">{m.label}</span>
             <div className="mt-3 flex items-baseline gap-3">
               <span className="text-sm text-muted-foreground line-through">{m.before}</span>
-              <span className="text-3xl font-bold text-muted-foreground">{m.after}</span>
+              <span className="text-3xl font-bold text-brand-red">{m.after}</span>
             </div>
           </div>
       )}

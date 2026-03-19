@@ -25,7 +25,7 @@ const Problem = () =>
           <p className="text-3xl font-bold text-foreground md:text-4xl">
             $5k–$50k<span className="text-brand-red">/min</span>
           </p>
-          <p className="max-w-[48ch] text-muted-foreground">That's what revenue-critical platforms lose during unplanned downtime. Add broken marketing campaigns, lost user trust, and reputational damage -- the real cost is even higher.
+          <p className="max-w-[48ch] text-muted-foreground">That's what revenue-critical platforms lose during unplanned downtime. Add broken marketing campaigns, lost user trust, and reputational damage – the real cost is even higher.
 
         </p>
         </motion.div>

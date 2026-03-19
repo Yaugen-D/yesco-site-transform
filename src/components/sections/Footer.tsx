@@ -1,7 +1,7 @@
 import Logo from "@/components/Logo";
 
-const Footer = () => (
-  <footer className="border-t border-border px-6 py-12 md:px-12 lg:px-20">
+const Footer = () =>
+<footer className="border-t border-border px-6 py-12 md:px-12 lg:px-20">
     <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
       <div>
         <Logo />
@@ -15,21 +15,21 @@ const Footer = () => (
           hello@yescolab.com
         </a>
         <a
-          href="https://yescolab.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="transition-colors hover:text-foreground"
-        >
+        href="https://yescolab.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition-colors hover:text-foreground">
+        
           yescolab.com
         </a>
         <a
-          href="https://t.me/yescolab"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="transition-colors hover:text-foreground"
-        >
-          @yescolab · Telegram
-        </a>
+        href="https://t.me/yescolab"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition-colors hover:text-foreground">Telegram  · @yescolab_bot 
+
+
+      </a>
       </div>
     </div>
 
@@ -40,7 +40,7 @@ const Footer = () => (
       <span>·</span>
       <span>Full discretion standard</span>
     </div>
-  </footer>
-);
+  </footer>;
+
 
 export default Footer;

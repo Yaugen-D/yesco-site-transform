@@ -9,7 +9,7 @@ const cards = [
 ];
 
 const PainPoints = () => (
-  <section className="px-6 py-32 md:px-12 lg:px-20">
+  <section className="px-6 py-16 md:px-12 md:py-24 lg:px-20">
     <motion.p variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="font-mono-label text-muted-foreground">Pain Points</motion.p>
     <motion.h2 variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="mt-4 text-4xl font-bold tracking-tight text-foreground md:text-5xl">
       Does This Sound Familiar?

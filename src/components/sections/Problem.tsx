@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { fadeUp } from "@/lib/animations";
 
 const issues = [
-"No real monitoring -- just hope",
+"No real monitoring – just hope",
 "Unknown risks that only appear in crises",
 "Manual deployments with no rollback plan",
 "No incident response process",

@@ -5,7 +5,7 @@ interface LogoProps {
 }
 
 const Logo = ({ className = "" }: LogoProps) => (
-  <img src={logoSvg} alt="yescolab" className={`h-12 w-auto ${className}`} />
+  <img src={logoSvg} alt="YesColab" className={`h-12 w-auto ${className}`} />
 );
 
 export default Logo;

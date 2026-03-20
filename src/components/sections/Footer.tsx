@@ -23,7 +23,7 @@ const Footer = () =>
           yescolab.com
         </a>
         <a
-        href="https://t.me/yescolab"
+        href="https://t.me/yescolab_bot"
         target="_blank"
         rel="noopener noreferrer"
         className="transition-colors hover:text-foreground">Telegram  · @yescolab_bot 

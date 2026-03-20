@@ -17,7 +17,7 @@ const Audit = () =>
       <motion.p variants={fadeUp} className="mt-4 text-lg text-muted-foreground">Every engagement begins with a complimentary audit.
 Understand your infrastructure risks before spending money on fixes.
     </motion.p>
-      <motion.ul variants={fadeUp} className="mt-10 inline-flex flex-col gap-2.5 text-left items-start">
+      <motion.ul variants={fadeUp} className="mt-10 flex-col gap-2.5 text-left flex items-start justify-start">
         {assessments.map((a, i) =>
       <li key={i} className="flex items-start gap-3 text-sm text-foreground">
             <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-red" />{a}

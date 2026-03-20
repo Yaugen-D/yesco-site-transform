@@ -1,11 +1,11 @@
-import logoSvg from "@/assets/yescolab_logo_hor_black.svg";
+import logoSvg from "@/assets/scep_logo.jpg";
 
 interface LogoProps {
   className?: string;
 }
 
 const Logo = ({ className = "" }: LogoProps) => (
-  <img src={logoSvg} alt="YesColab" className={`h-12 w-auto ${className}`} />
+  <img src={logoSvg} alt="SCEP" className={`h-12 w-auto ${className}`} />
 );
 
 export default Logo;

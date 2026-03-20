@@ -11,22 +11,22 @@ const Footer = () =>
       </div>
 
       <div className="flex flex-col gap-2 text-sm text-muted-foreground md:items-end">
-        <a href="mailto:hello@yescolab.com" className="transition-colors hover:text-foreground">
-          hello@yescolab.com
+        <a href="mailto:contact@scepgroup.com" className="transition-colors hover:text-foreground">
+          contact@scepgroup.com
         </a>
         <a
-        href="https://yescolab.com"
+        href="https://scepgroup.com"
         target="_blank"
         rel="noopener noreferrer"
         className="transition-colors hover:text-foreground">
         
-          yescolab.com
+          scepgroup.com
         </a>
         <a
-        href="https://t.me/yescolab_bot"
+        href="https://t.me/scepgroup_bot"
         target="_blank"
         rel="noopener noreferrer"
-        className="transition-colors hover:text-foreground">Telegram  · @yescolab_bot 
+        className="transition-colors hover:text-foreground">Telegram  · @scepgroup_bot 
 
 
       </a>

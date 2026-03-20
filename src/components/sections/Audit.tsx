@@ -24,7 +24,7 @@ Understand your infrastructure risks before spending money on fixes.
           </li>
       )}
       </motion.ul>
-      <motion.a variants={fadeUp} href="mailto:hello@yescolab.com?subject=Stability%20Audit%20Request" className="mt-12 inline-flex h-14 items-center rounded-full bg-foreground px-10 text-sm font-semibold text-background transition-opacity hover:opacity-90">
+      <motion.a variants={fadeUp} href="mailto:contact@scepgroup.com?subject=Stability%20Audit%20Request" className="mt-12 inline-flex h-14 items-center rounded-full bg-foreground px-10 text-sm font-semibold text-background transition-opacity hover:opacity-90">
         Request Your Free Audit →
       </motion.a>
       <motion.p variants={fadeUp} className="mt-4 text-xs text-muted-foreground">
